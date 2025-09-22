@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#10b981"/>
+  
+  <!-- Mobile app mockup -->
+  <rect x="125" y="25" width="150" height="250" rx="10" fill="#ffffff"/>
+  <rect x="125" y="25" width="150" height="30" rx="10" fill="#e5e7eb"/>
+  <rect x="125" y="245" width="150" height="30" rx="10" fill="#e5e7eb"/>
+  
+  <!-- App content -->
+  <rect x="145" y="75" width="110" height="50" rx="5" fill="#e5e7eb"/>
+  <rect x="145" y="135" width="110" height="10" rx="5" fill="#e5e7eb"/>
+  <rect x="145" y="155" width="110" height="10" rx="5" fill="#e5e7eb"/>
+  <rect x="145" y="175" width="110" height="10" rx="5" fill="#e5e7eb"/>
+  
+  <!-- Home button -->
+  <circle cx="200" cy="235" r="10" fill="#e5e7eb"/>
+</svg>
