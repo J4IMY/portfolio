@@ -28,6 +28,13 @@
 }
 
 @font-face {
+    font-family: 'Metamorphou';
+    src: url('fonts/Metamorphou-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Apollo';
     src: url('fonts/APOLLO.otf') format('opentype');
     font-weight: normal;
@@ -59,7 +66,7 @@
     --card-bg: rgba(0, 20, 0, 0.7);
     --terminal-font: 'Courier New', monospace;
     --special-font: 'Caviar Dreams', sans-serif;
-    --text-font: 'Apollo', serif;
+    --text-font: 'Metamorphou', serif;
 }
 
 /* Reset some default browser styles */
@@ -504,6 +511,7 @@ a:hover {
     color: var(--primary-color);
     padding: 0.3rem 0.8rem;
     border-radius: 0;
+    letter-spacing: 1.2px;
     font-size: 0.8rem;
     font-weight: 500;
     font-family: var(--special-font);
@@ -540,15 +548,26 @@ a:hover {
     gap: 2rem;
 }
 
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
 .skill-category h3 {
     margin-bottom: 1.5rem;
     text-align: center;
 }
 
 .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     margin-bottom: 1.2rem;
     background-color: rgba(0, 20, 0, 0.5);
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     border: 1px solid var(--primary-color);
     transition: var(--transition);
     box-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
@@ -558,6 +577,31 @@ a:hover {
     transform: translateY(-5px);
     border-color: var(--secondary-color);
     box-shadow: 0 0 10px rgba(255, 53, 94, 0.4);
+}
+
+/* SVG Icon Size Control */
+.skill-item img,
+.skill-item svg {
+    width: 50px;
+    height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: contain;
+    margin-bottom: 0.8rem;
+    transition: var(--transition);
+}
+
+.skill-item:hover img,
+.skill-item:hover svg {
+    transform: scale(1.1);
+}
+
+.skill-item p {
+    font-family: var(--special-font);
+    color: var(--primary-color);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin: 0;
 }
 
 .skill-name {

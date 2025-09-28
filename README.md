@@ -68,4 +68,4 @@ This website is designed to work on all modern browsers including:
 
 ## Credits
 - Font Awesome for icons
-- Unsplash for background images (if used)
+- svg repo for free SVG icons
